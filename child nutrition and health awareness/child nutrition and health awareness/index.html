@@ -1,0 +1,230 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+
+  <title>child nutrition and health awareness</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body style="user-select: none;">
+  <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+    style='font-family: Epilogue, "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+
+      <!-- header -->
+      <header
+        class="flex  items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#111618]">
+          <!-- <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                fill="currentColor"></path>
+            </svg>
+          </div> -->
+          <h2 class="text-[#111618] text-lg font-bold leading-tight tracking-[-0.015em]"></h2>
+        </div>
+        <div class="flex flex-1 justify-end gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-[#111618] text-sm font-medium leading-normal" href="index.html">Home</a>
+            <a class="text-[#111618] text-sm font-medium leading-normal" href="#Tips">Tips</a>
+            <a class="text-[#111618] text-sm font-medium leading-normal" href="#Video">Featured Articles</a>
+            <a class="text-[#111618] text-sm font-medium leading-normal" href="#FAQs">FAQs</a>
+
+          </div>
+          <button
+            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#f0f3f4] text-[#111618] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+            <div class="text-[#111618]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                viewBox="0 0 256 256">
+                <path
+                  d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                </path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="@container">
+            <div class="@[480px]:p-4">
+              <div
+                class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://th.bing.com/th/id/OIP.pvy_GIF7TtadSHHGTBCY2wHaGE?w=626&h=513&rs=1&pid=ImgDetMain");'>
+                <div class="flex flex-col gap-2 text-left">
+                  <h1
+                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                    Healthy Kids, Happy Futures!
+                  </h1>
+                  <h2
+                    class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                    
+                  </h2>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#33b3e6] text-[#111618] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                  <span id="click" class="truncate">Take the quiz</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- quiz -->
+
+
+
+          <div>
+            <div class="bg-white shadow-md rounded-lg p-6 ">
+              <div id="quiz" style="display: none;">
+                <div id="nextQuestion">
+
+                  <h1 class="text-lg font-semibold mb-4">Question 1/4</h1>
+                  <p class="text-gray-500 mb-4">Personal Hygiene Quiz</p>
+
+
+                  <p class="font-medium mb-6">What is the recommended daily intake of fruits and vegetables for children aged 4-8 years?</p>
+
+                  <form>
+                    <div class="mb-4">
+                      <label class="flex items-center space-x-2">
+                        <input type="radio" name="question" value="Washing hands frequently"
+                          class="form-radio text-blue-600">
+                        <span>1-2 servings</span>
+                      </label>
+                    </div>
+                    <div class="mb-4">
+                      <label class="flex items-center space-x-2">
+                        <input type="radio" name="question" value="Avoiding contact with others"
+                          class="form-radio text-blue-600">
+                        <span>
+                          3-5 servings</span>
+                      </label>
+                    </div>
+                    <div class="mb-4">
+                      <label class="flex items-center space-x-2">
+                        <input type="radio" name="question" value="Wearing gloves all the time"
+                          class="form-radio text-blue-600">
+                        <span>
+                        5-7 servings</span>
+                      </label>
+                    </div>
+                    <div class="mb-4">
+                      <label class="flex items-center space-x-2">
+                        <input type="radio" name="question" value="Taking antibiotics" class="form-radio text-blue-600">
+                        <span>
+                        7-9 servings</span>
+                      </label>
+                    </div>
+                </div>
+
+                <div id="next" class="flex justify-end">
+                  <button type="submit"
+                    class="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600">Next</button>
+                </div>
+
+                </form>
+              </div>
+
+              <div id="result">
+
+              </div>
+            </div>
+
+          </div>
+          <!-- Tips -->
+          
+          <!-- -->
+          <section id="Video">
+            <h2 class="text-[#111618] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured
+              article</h2>
+
+            <div class="flex  gap-5  flex-wrap ">
+              <a href="https://youtu.be/VQTtg3KgVv4?si=mX3Mb7k_v7nG31iK" target="_blank">
+                <div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-video"
+                  style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://i.pinimg.com/originals/a1/f9/5b/a1f95b5a55a726a9a49533c04d7dc2dc.jpg" ); height: 20vw;'>
+                  <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2"> Essential Nutrients Every Child Needs
+                  </p>
+                </div>
+              </a>
+              <a href="https://youtu.be/HZT7OzBXh-A?si=xmiezZyB1RSLuehY" target="_blank">
+                <div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-video"
+                  style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://www.womendailymagazine.com/wp-content/uploads/2018/06/the-importance-of-proper-nutrition-for-your-child-1.jpg"); height: 20vw;'>
+                  <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Top Superfoods for Kids growth and immunity
+                  </p>
+                </div>
+              </a>
+              <a href="https://youtu.be/moqWBk6Ulfc?si=z3wqa8LS4QHFakaN" target="_blank">
+                <div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-video"
+                  style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://th.bing.com/th/id/OIP.ttc0cDWoYP7xupgJGYkQCgHaE7?rs=1&pid=ImgDetMain"); height: 20vw;'>
+                  <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">How Nutrition Affects kids mental health
+                  </p>
+                </div>
+              </a>
+
+              <a href="https://youtu.be/3XT33A0jW4w?si=sunhsaYsUHUT6sI9" target="_blank">
+                <div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-video"
+                  style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAzL2ZsNTEzNzAxNjc3MDMtaW1hZ2UuanBn.jpg"); height: 20vw;'>
+                  <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">spotting and preventing malnutrition in kids
+                  </p>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <!-- About us -->
+          <section id="FAQs">
+            <div>
+              <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
+                <h2 class="text-[#111618] text-[25px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">FAQs
+                </h2>
+                <div class="flex flex-wrap justify-between gap-2 p-4">
+                  <p class="text-[#111618] tracking-light text-[32px] font-bold leading-tight min-w-72">What are the essential nutrients that children need for growth and development?</p>
+                </div>
+                <p class="text-[#111618] text-justify font-normal leading-normal pb-3 pt-1 px-4">
+                  Children require a range of essential nutrients for their growth and development. These include proteins, which are necessary for building and repairing tissues, and carbohydrates, which serve as the main source of energy. Fats are crucial for brain development and energy as well. Vitamins and minerals, such as Vitamin D, Calcium, Iron, and Zinc, play various roles in bodily functions. Fiber is important for healthy digestion, and water is essential for hydration and supporting all bodily functions.
+                </p>
+                <h2 class="text-[#111618] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                  How can I ensure my child is eating a balanced diet?</h2>
+                <p class="text-[#111618] text-justify font-normal leading-normal pb-3 pt-1 px-4">
+                  To ensure your child is eating a balanced diet, offer a variety of foods from all food groups: fruits, vegetables, grains, proteins, and dairy. Encourage regular meal times and snacks, and limit sugary snacks and beverages. Involving your child in meal planning and preparation can make healthy eating fun and educational, helping to foster a positive relationship with food.
+                </p>
+                <h2 class="text-[#111618] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                  How much physical activity do children need daily?</h2>
+                <p class="text-[#111618] text-justify font-normal leading-normal pb-3 pt-1 px-4">
+                  Children should engage in at least 60 minutes of moderate to vigorous physical activity each day. This can include activities such as playing outside, participating in sports, dancing, or bike riding. Regular physical activity helps in maintaining a healthy weight, building strong bones and muscles, and promoting overall well-being.
+                </p>
+                <h2 class="text-[#111618] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Boosts
+                  What are some signs of poor nutrition in children?</h2>
+                <p class="text-[#111618] text-justify font-normal leading-normal pb-3 pt-1 px-4">
+                  Signs of poor nutrition in children may include fatigue and low energy levels, poor concentration and academic performance, frequent illnesses or infections, slow growth or development, and behavioral issues like irritability. Recognizing these signs early can help in addressing dietary deficiencies and improving overall health.
+                </p>
+                <h2 id="Wash"
+                  class="text-[#111618] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                  How important is hydration for children, and how much water should they drink daily?</h2>
+                
+                  <p class="text-[#111618] text-justify font-normal leading-normal pb-3 pt-1 px-4">
+                    Hydration is crucial for children as it aids in digestion, nutrient absorption, and overall bodily functions. Children should drink around 6-8 cups of water daily, though this amount can vary based on age, activity level, and climate. Ensuring adequate water intake helps in maintaining energy levels and preventing dehydration.                  </p>
+
+                
+
+
+
+              </div>
+            </div>
+          </section>
+
+          <!-- futter -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+
+</html>
